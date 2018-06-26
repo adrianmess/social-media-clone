@@ -29,15 +29,25 @@ function Header(){
       <div style={divStyle}>
         <a style={aStyle}>Home</a>
         <a style={aStyle}>Notifications</a>
-        <a style={aStyle}>Messages</a>
-      </div>
-      <div style={inputStyle}>
-        <input placeholder="Search"></input>
-        <input placeholder="Tweet"></input>
-      </div>
-    </div>
+        <a className="buttons">Messages</a>
 
-  );
-}
+      </div>
+      <div>
+        <input className="inputFields" placeholder="Search"></input>
+        <input className="inputFields" placeholder="Tweet"></input>
 
-export default Header;
+      </div>
+      <style jsx>{`
+          .buttons {
+            color:black;
+            border-style: solid;
+            border-width: 2px;
+            border-color: blue;
+          }
+          `}</style>
+      </div>
+
+    );
+  }
+
+  export default Header;
